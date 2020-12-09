@@ -1,0 +1,29 @@
+{
+    "name": "bot-telegram",
+    "version": "1.0.0",
+    "description": "bot telegram in node.js",
+    "main": "bot.js",
+    "scripts": {
+        "dev": "nodemon bot.js --exec babel-node",
+        "start": "node bot.js",
+        "create-db": "npx sequelize db:create",
+        "migrate-db": "npx sequelize db:migrate",
+        "drop-db": "npx sequelize db:drop",
+        "seed-db": "npx sequelize db:seed:all",
+        "seed-drop": "npx sequelize db:seed:undo:all"
+    },
+    "author": "otniel97",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "pg": "^8.3.3",
+        "pg-hstore": "^2.3.3",
+        "sequelize": "^6.3.5",
+        "sequelize-cli": "^6.2.0",
+        "telegraf": "^3.38.0"
+    }
+}
